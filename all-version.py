@@ -77,7 +77,7 @@ def download(url):
 
         print("成功创建文件：{}".format(filename))
 
-        time.sleep(10)
+        time.sleep(5)
 
 
 if __name__ == '__main__':
