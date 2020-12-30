@@ -2,20 +2,14 @@
 
 
 """
-功能：
-1、下载所有版本
-2、下载指定版本的所有包
-
+功能：下载指定版本的node-sass二进制文件
 """
 
-from requests_html import HTMLSession
-import requests
 import time
 import os
-
-
-def save_binary(filename, content):
-    """"""
+import sys
+from requests_html import HTMLSession
+import requests
 
 
 def get_link_list(url):
@@ -33,7 +27,6 @@ def get_link_list(url):
     # print(all_absolute_links)
 
     return list(all_links)
-
 
 
 if __name__ == '__main__':

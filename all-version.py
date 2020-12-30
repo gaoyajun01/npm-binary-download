@@ -2,10 +2,7 @@
 
 
 """
-功能：
-1、下载所有版本
-2、下载指定版本的所有包
-
+功能：下载所有版本的node-sass二进制文件
 """
 
 from requests_html import HTMLSession
