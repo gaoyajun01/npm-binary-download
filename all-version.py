@@ -9,7 +9,7 @@ from requests_html import HTMLSession
 import requests
 import time
 import os
-
+import pprint
 
 
 def get_link_list(url):
@@ -36,10 +36,11 @@ def download(url):
 
     # 提取Windows、Linux版本的文件
     expected_link_list = [x for x in list(all_links) if (".node" in x and ('linux' in x or 'win32' in x))]
-    print(expected_link_list)
+    # print(expected_link_list)
+    pprint.pprint(expected_link_list)
 
     for link in expected_link_list:
-        print(link)
+        # print(link)
 
         version = link.split("/")[-2]
         # print(version)
@@ -77,7 +78,7 @@ def download(url):
 
         print("成功创建文件：{}".format(filename))
 
-        time.sleep(5)
+        time.sleep(3)
 
 
 if __name__ == '__main__':

@@ -77,4 +77,4 @@ if __name__ == '__main__':
 
         print("成功创建文件：{}".format(filename))
 
-        time.sleep(10)
+        time.sleep(3)
