@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
         # 判断版本是否存在
         version_path = "./chromedriver/{}".format(version)
-        print("版本路径：{}".format(version_path))
+        # print("版本路径：{}".format(version_path))
 
         if not os.path.exists(version_path):
             os.makedirs(version_path)
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
         for file_link in expected_file_link_list:
             binary_filename = file_link.split("/")[-1]
-            print("文件名：{}".format(binary_filename))
+            # print("文件名：{}".format(binary_filename))
 
             real_url = "https://cdn.npm.taobao.org/dist/chromedriver/{}/{}".format(version, binary_filename)
             print("文件真实路径：{}".format(real_url))
