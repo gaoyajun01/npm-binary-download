@@ -96,6 +96,13 @@ if __name__ == '__main__':
         version = link.split("/")[-2]
         print(version)
 
+        # 判断版本是否存在
+        version_path = "./node-sass/{}".format(version)
+
+        if os.path.exists(version_path):
+            print("已存在版本：{}".format(version_path))
+            continue
+
         download(url=link)
 
         print("已下载版本：{}".format(version))
